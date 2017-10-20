@@ -1,0 +1,62 @@
+{
+  "date": "1017",
+  "projectname": "TH15_decoNoel",
+  "id": {
+    "fr": "1573", "bf": "1572", "bv": "1576", "nl": "1571", "de": "1575", "uk": "1574"},
+  "price": {
+    "fr": "Sélection<br />à partir de", "ent": "4", "dec": ".99", "unit": "€", "unituk": "£",
+    "de": "Sortiment<br />ab", "nl": "Selectie<br />vanaf", "uk": "Selection<br />from"
+  },
+  "pdt": {
+    "fr": {
+      "0": ["pk1", "pk2", "pk3", "pk4"],
+      "1": ["maison-deco/no-l/", "pere-no-l-sensor-cheminee", "2564110"],
+      "2": ["maison-deco/no-l/", "2-tasses-decoration-chatons-no-l", "1005115"],
+      "3": ["maison-deco/no-l/", "etoile-led-poincettia", "2547115"],
+      "4": ["univer/Sousunivers-path/pk4/", "lib-pk4", "ref-pk4"]
+    },
+    "bf": {
+      "0": ["pk1", "pk2", "pk3", "pk4"],
+      "1": ["maison-deco/decoration/", "panier-d-automne-chouette", "2402113"],
+      "2": ["cuisine/deco-amenagement-cuisine/", "sel-poivre-moineaux", "2183119"],
+      "3": ["cuisine/ustensiles-cuisson/", "cuit-camembert-recette", "1496116"],
+      "4": ["univer/Sousunivers-path/pk4/", "lib-pk4", "ref-pk4"]
+    },
+    "bv": {
+      "0": ["pk1", "pk2", "pk3", "pk4"],
+      "1": ["huis-decoratie/decoreren/", "herfstmand-met-uil", "2402113"],
+      "2": ["keuken/deco-keukenorganisatie/", "zout-peperstel-mussen", "2183119"],
+      "3": ["keuken/kookgerei/", "camembert-ovenschaal-la-recette", "1496116"],
+      "4": ["univer/Sousunivers-path/pk4/", "lib-pk4", "ref-pk4"]
+    },
+    "nl": {
+      "0": ["pk1", "pk2", "pk3", "pk4"],
+      "1": ["huis-decoratie/decoreren/", "herfstmand-met-uil", "2402113"],
+      "2": ["keuken/deco-keukenorganisatie/", "zout-peperstel-mussen", "2183119"],
+      "3": ["keuken/kookgerei/", "camembert-ovenschaal-la-recette", "1496116"],
+      "4": ["univer/Sousunivers-path/pk4/", "lib-pk4", "ref-pk4"]
+    },
+    "de": {
+      "0": ["pk1", "pk2", "pk3", "pk4"],
+      "1": ["heim-dekoration/dekorieren/", "herbstkorbchen-eule", "2402113"],
+      "2": ["kuche/deko-kuchenausstattung/", "salz-pfeffer-spatzen", "2183119"],
+      "3": ["kuche/kochgeschirr/", "camembert-form-mit-rezept", "1496116"],
+      "4": ["univer/Sousunivers-path/pk4/", "lib-pk4", "ref-pk4"]
+    },
+    "uk": {
+      "0": ["pk1", "pk2", "pk3", "pk4"],
+      "1": ["home-decoration/decoration/", "owl-autumn-basket", "2402113"],
+      "2": ["kitchen/deco-remodeling-kitchen/", "sparrow-pepper-set", "2183119"],
+      "3": ["home-decoration/decoration/", "arabesque-fruit-bowl", "8428211"],
+      "4": ["univer/Sousunivers-path/pk4/", "lib-pk4", "ref-pk4"]
+    }
+  },
+  "txtBtn" : {
+    "fr": "Entrez-vite !",
+    "bf": "",
+    "bv": "",
+    "nl": "",
+    "de": "",
+    "uk": ""
+  }
+}

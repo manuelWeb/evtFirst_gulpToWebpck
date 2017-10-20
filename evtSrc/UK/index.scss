@@ -1,0 +1,172 @@
+// functions.scss
+/// Slightly lighten a color
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+$fontSerif: Georgia, "Times New Roman", Times, serif;
+$font-stack-arial: Arial, Helvetica, sans-serif;
+$btn-bg : #C20D00;//#ffff00
+$btn-bd : 3;
+$btn-hover : #4A4319;
+$btn-txtColor: #FFF;
+$EC_height: 505;
+// surcharge
+#hpAnimCo{height: #{$EC_height}px;}
+
+body, ul {margin: 0;}
+ul {list-style: none;}
+// repère justification
+// #globalLink:before {content:'hey rule!'; display: block; min-height: 100%; width: 1px; background-color: #00f; margin-left: 932px; }
+
+/* js globalLink */
+#globalLink {
+  position: absolute; top: 0; left: 0;
+  width: 964px; height: #{$EC_height}px;
+  // background: url(evtFirst_bd-diffu.png) no-repeat left bottom; // enable to fade bottom insert
+}
+
+* {box-sizing: border-box;}
+
+.centralEvent {
+  position: relative; width: 964px; height: #{$EC_height}px;
+  margin: 0;
+  background: url(bg.jpg) no-repeat 0 0;
+  overflow: hidden;
+}
+li {
+  a{
+    border: none;
+    // attrib selector > img how src begin with pk
+    [src^="pk"] {border: none;}
+    &.pck1, &.pck2, &.pck3, &.pck4{
+      position: absolute;
+      // outline: 1px solid red;
+      border: 1px solid transparent;
+			transition: all 1s;
+    }
+    &.pck1, &.pck2, &.pck3, &.pck4 {
+      top: 52px;
+      height: 244px;
+    }
+    &.pck1 {
+      left: 16px; width: 234px;
+    }
+    &.pck2 {
+      left: 256px; width: 210px;
+    }
+    &.pck3 {
+      left: 472px; width: 222px;
+    }
+    &.pck4 {
+      left: 680px; width: 268px;
+    }
+		// &:hover {
+		// 	border-radius: 100%;
+		// 	border: 1px solid green;
+		// }
+  }
+}
+// price
+.price {
+  position: absolute; top: 78px; left: 752px;
+  width: 148px; height: 148px;
+  font: normal 16px $font-stack-arial;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFF00;
+  border: 3px solid #FFF6BE;
+  background-color: #FF0000;
+  // background: linear-gradient(160deg, #FFFD03, #009701);
+  border-radius: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.35);
+  // transform: rotate(-8deg);
+  b {
+    // color: #009900;
+    font-size: 26px; font-weight: normal;
+    // text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    span {line-height: 58px; font-size: 68px; font-weight: bold;}
+  }
+}
+// class generique centrage horizontal et vertical
+.v-h-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 140px;
+}
+// button
+.gradient-btn-evtfirst {
+  border-radius: 28px;
+  background-color: $btn-bg;
+}
+.js-btn {
+  position: relative;
+  box-sizing: content-box;
+  display: inline-block;
+  height: 42px;
+  margin: 242px 0 0 704px;
+  padding: 0 30px;
+  text-align: center;
+  border: #{$btn-bd}px solid #FFF6BE; color: $btn-txtColor;
+  font: normal bold 16px $font-stack-arial; text-decoration: none;
+  text-shadow: 0px 0px 5px $btn-bg;
+  transition: all .8s;
+
+  span {
+   line-height: 42px;
+   display: inline-block;
+   vertical-align: middle;
+   // text-shadow: 0px 0px 5px #660099;
+    + span {
+      position: relative; top: 0px;
+      // border: 1px solid green;
+    }
+    > span {
+      margin-left: 3px;
+      font-size: 20px;
+      // border: 1px solid red;
+    }
+
+  }
+  .arrow {
+    vertical-align: middle;
+    font-size: inherit;
+  }
+  .reflet {
+    position: absolute; left: 50%; top: 35%;
+    width: 94%; height: 24px;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    background: tint( $btn-bg, 99% );
+    // background: $btn-bg; // #FFFFFF > si pas gradient + txt blc : illisible
+    // background: linear-gradient(tint( $btn-bg, 90% ), $btn-bg);
+    background: linear-gradient(to bottom, #FFFFFF, rgba(250,250,250,0) );
+    // opacity: 1;
+  }
+  &:before{
+    content: "";
+    position: absolute;
+    top: -#{$btn-bd}px; left: -#{$btn-bd}px;
+    width: 100%; height: inherit;
+    padding: #{$btn-bd}px;
+    border-radius: 28px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .45);
+    transition: all .8s;
+    background-color: rgba(0,0,0,0);
+  }
+  &:hover {
+    // color: #000;
+    text-shadow: none;
+    span {
+      text-shadow: none;
+    }
+    background-color: $btn-hover;
+  }
+}
+
+.bottomfade {
+  position: absolute; bottom: 0;
+  width: 100%; height: 100px;
+  background: linear-gradient(rgba(250,250,250,0), #FFFFFF);
+}
