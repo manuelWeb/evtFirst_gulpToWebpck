@@ -7,9 +7,10 @@ $fontSerif: Georgia, "Times New Roman", Times, serif;
 $font-stack-arial: Arial, Helvetica, sans-serif;
 $btn-bg : #C20D00;//#ffff00
 $btn-bd : 3;
-$btn-hover : #4A4319;
+$btn-hover : #140C57;
 $btn-txtColor: #FFF;
 $EC_height: 505;
+$lightColorOut: #ffd756; 
 // surcharge
 #hpAnimCo{height: #{$EC_height}px;}
 
@@ -49,13 +50,13 @@ li {
       height: 244px;
     }
     &.pck1 {
-      left: 16px; width: 234px;
+      left: 310px; width: 204px;
     }
     &.pck2 {
-      left: 256px; width: 210px;
+      left: 520px; width: 198px;
     }
     &.pck3 {
-      left: 472px; width: 222px;
+      left: 726px; width: 202px;
     }
     &.pck4 {
       left: 680px; width: 268px;
@@ -68,7 +69,7 @@ li {
 }
 // price
 .price {
-  position: absolute; top: 78px; left: 744px;
+  position: absolute; top: 78px; left: 724px;
   width: 148px; height: 148px;
   font: normal 16px $font-stack-arial;
   line-height: 21px;
@@ -105,8 +106,8 @@ li {
   box-sizing: content-box;
   display: inline-block;
   height: 42px;
-  margin: 242px 0 0 686px;
-  padding: 0 10px;
+  margin: 251px 0 0 740px;
+  padding: 0 20px;
   text-align: center;
   border: #{$btn-bd}px solid #FFF6BE; color: $btn-txtColor;
   font: normal bold 16px $font-stack-arial; text-decoration: none;
@@ -135,7 +136,7 @@ li {
   }
   .reflet {
     position: absolute; left: 50%; top: 35%;
-    width: 94%; height: 24px;
+    width: 88%; height: 24px;
     transform: translate(-50%, -50%);
     border-radius: 16px;
     background: tint( $btn-bg, 99% );
@@ -162,6 +163,35 @@ li {
       text-shadow: none;
     }
     background-color: $btn-hover;
+  }
+}
+
+// animation couronne
+$lgtColIn: rgb(248,223,182);
+.lightrope {
+  
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  margin: 0;
+  padding: 0;
+  width: 10px;
+  height: 13px;
+  background: $lightColorOut;
+  box-shadow: 0px 4.66667px 24px 3px $lightColorOut;
+  animation-name: flash-1;
+  animation-duration: 2s;
+}
+.lightropePos1 {position: absolute; top: 190px; left: 140px;}
+.lightropePos2 {position: absolute; top: 210px; left: 160px;}
+@keyframes flash-1 {
+  0%, 100% {
+    background: $lightColorOut;
+    // box-shadow: 0px 4.66667px 24px 3px $lightColorOut;
+    box-shadow: 0 0 30px 10px $lightColorOut;
+  }
+  50% {
+    background: rgba($lgtColIn, 0);
+    box-shadow: 0px 4.66667px 24px 3px rgba($lgtColIn, 0.2);
   }
 }
 

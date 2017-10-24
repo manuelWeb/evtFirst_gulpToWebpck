@@ -14,14 +14,17 @@ html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
       #globalLink
         .bottomfade
 
-      .price
-        .v-h-center
-          == $objso['price']['de']
-          br
-          b
-            == $objso['price']['unit']
-            span == $objso['price']['ent']
-            == $objso['price']['dec']
+      .lightrope.lightropePos1
+      .lightrope.lightropePos2
+
+      / .price
+      /   .v-h-center
+      /     == $objso['price']['de']
+      /     br
+      /     b
+      /       == $objso['price']['unit']
+      /       span == $objso['price']['ent']
+      /       == $objso['price']['dec']
 
       / pk
       ul
@@ -41,9 +44,9 @@ html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
       a.js-btn.gradient-btn-evtfirst href==($linkRay) onclick==($ga_ray_btn)
         span.reflet &nbsp;
         span
-          == ($txtBtn[0])
-          br
-          == ($txtBtn[1])
+          == $objso['txtBtn']['de']
+          / br
+          / == ($txtBtn[1])
           / span.move
           /   == ($txtBtn[1])
 
