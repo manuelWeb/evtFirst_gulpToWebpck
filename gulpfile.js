@@ -127,11 +127,18 @@ function messageSlimEnd (slimEnd) {
   console.log('slimeEnd: '+slimEnd);
 };
 
+// gulp.task('dev1',['images','script','slim','sass','browserSync'], function() {
+//   gulp.watch([src+'*.{png,jpg,gif}'],['images','sass','slim']);
+//   gulp.watch(['source.json'],['slim']);
+//   gulp.watch([src+'*.slim'],['slim','images','script']);
+//   gulp.watch(src+'*.scss',['sass','slim','images','script']);
+// });
+
 gulp.task('dev1',['images','script','slim','sass','browserSync'], function() {
   gulp.watch([src+'*.{png,jpg,gif}'],['images','sass','slim']);
   gulp.watch(['source.json'],['slim']);
-  gulp.watch([src+'*.slim'],['slim','images','script']);
-  gulp.watch(src+'*.scss',['sass','slim','images','script']);
+  gulp.watch([src+'*.slim'],['slim','images']);
+  gulp.watch(src+'*.scss',['sass','slim','images']);
 });
 
 // prod
